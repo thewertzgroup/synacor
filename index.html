@@ -1,0 +1,76 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Synacor Test</title>
+
+	<meta name="author" content="Christoph E. Wertz">
+	<meta name="description" content="Synacor Test">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/synacor.css">
+	
+</head>
+<body>
+
+	<!-- http://www.flickr.com/services/api/explore/flickr.photos.search -->
+	<!-- http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=92a5171089f99b819001f72729810488&tags=sunset&format=rest&auth_token=72157634671981912-969574e6252f8390&api_sig=b0afdc9cab8ef884d13d15a297da079e -->
+	
+	<div class='container-fluid' id='layout'>
+		<div class='row-fluid'>
+			<img class='logo' src='img/flickr-logo.png'>
+			<input id='flickr_search' type='search' results=5 name=s placeholder='Enter a category ...' onsearch='searchFlickr(this)'>
+		</div>
+		<div class='row-fluid'>
+			<div class='previous'>
+				<a id='first_page' class='disabled' title='First'>&lt;&lt;&lt;&lt;</a>&nbsp;&nbsp;<a id='previous_page' class='disabled' title='Previous'>&lt;&lt;</a>
+			</div>
+			<div id='current_page'></div>
+			<div class='next'>
+				<a id='next_page' class='disabled' title='Next'>&gt;&gt;</a>&nbsp;&nbsp;<a id='last_page' class='disabled' title='Last'>&gt;&gt;&gt;&gt;</a>
+			</div>	
+		</div>
+		<div class='row-fluid'>
+			<div class='span12'>
+				<div id='error' class='center'></div>
+			</div>
+		</div>
+		<div class='row-fluid'>
+			<div class='span4' id='photo_11'></div>
+			<div class='span4' id='photo_12'></div>
+			<div class='span4' id='photo_13'></div>
+		</div>
+		<div class='row-fluid'>
+			<div class='span4' id='photo_21'></div>
+			<div class='span4' id='photo_22'></div>
+			<div class='span4' id='photo_23'></div>
+		</div>
+		<div class='row-fluid'>
+			<div class='span4' id='photo_31'></div>
+			<div class='span4' id='photo_32'></div>
+			<div class='span4' id='photo_33'></div>
+		</div>
+		<div class='row-fluid'>
+			<div class='span12'>
+				<div id='log' class='center'></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/underscore-min.js"></script>
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script src="js/less-1.4.1.min.js"></script>
+	
+	<script src="js/backbone.js"></script>
+
+	<script src="js/synacor.js"></script>
+
+</body>
+</html>

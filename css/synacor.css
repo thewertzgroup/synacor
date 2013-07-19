@@ -1,0 +1,140 @@
+
+input[type=search] { 
+	text-align: right;
+	cursor: pointer;
+	display: block; 
+	letter-spacing: 4px;        
+	word-spacing: 20px;      
+	margin: auto;         
+}
+
+input[type=search] { 
+	color:#999; opacity:0.3;
+    transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+}
+input[type=search]:focus { 
+ 	opacity:1;
+}
+
+/*
+ * Adjust for large screens vs. handhelds.
+ */
+@media screen {
+	input[type=search] { 
+		width: 60%; 
+	}
+}
+
+@media handheld and (max-device-width: 640px) {
+	input[type=search] { 
+		width: 100%; 
+	}
+}
+
+
+img.logo {
+	max-width: 60%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+img.error {
+	max-width:300px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+	background-image: url(https://www.icloud.com/system/cloudos/1R27/en-us/source/resources/images/bg_tile@2x.jpg);
+}
+
+a.disabled { 
+	color:gray; 
+	text-decoration:none;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	max-width:600px;
+}
+
+.previous {
+	float: left;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.next {
+	float: right;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media screen {
+
+	.previous
+	{
+		width: 25%;
+		padding-left: 20%;
+	}
+	
+	.next
+	{
+		width: 25%;
+		padding-right: 20%;
+	}
+
+}
+
+@media handheld and (max-device-width: 640px) {
+
+	.previous
+	{
+		width: 45%;
+	}
+	
+	.next
+	{
+		width: 45%;
+	}
+
+}
+
+#current_page
+{
+	float: left;
+	text-align: center;
+	width: 10%;
+	color: #0088cc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#log
+{
+	text-align: center;
+	color: #ffffff;
+}
+
+.row-fluid
+{
+	align:middle;
+}
+
+.span4
+{
+	text-align: center;
+	min-width: 240px;
+	height: 260px;
+}
