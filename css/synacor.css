@@ -17,11 +17,19 @@
  * limitations under the License.
  * ========================================================== */
  
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+} 
+ 
 input[type=search] { 
 	text-align: right;
 	cursor: pointer;
 	display: block; 
-	letter-spacing: 4px;        
+	letter-spacing: 3px;        
 	word-spacing: 20px;      
 	margin: auto;         
 }
@@ -38,13 +46,13 @@ input[type=search]:focus {
  	opacity:1;
 }
 
-@media screen {
+@media screen and (min-width: 700px) {
 	input[type=search] { 
 		width: 60%; 
 	}
 }
 
-@media handheld and (max-device-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 699px) {
 	input[type=search] { 
 		width: 100%; 
 	}
@@ -96,7 +104,7 @@ a.disabled {
 	padding-bottom: 10px;
 }
 
-@media screen {
+@media screen and (min-width: 700px) {
 
 	.previous {
 		width: 25%;
@@ -110,7 +118,7 @@ a.disabled {
 
 }
 
-@media handheld and (max-device-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 699px) {
 
 	.previous {
 		width: 45%;
