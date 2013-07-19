@@ -29,7 +29,7 @@ var service  		= 'http://api.flickr.com/services/rest/';
 var method   		= 'flickr.photos.search';
 var api_key  		= 'caaeaba3442d5b600c67acdf3ff295d2';
 var tags     		= '';
-var per_page 		= 9;
+var per_page 		= 24;
 var page     		= 1;
 var format   		= 'json';
 var nojsoncallback	= 1;
@@ -93,6 +93,21 @@ var Photos = Backbone.Collection.extend({
 // Create an instance of the new collection.
 //
 var photos = new Photos();
+
+
+var PhotosView = Backbone.View.extend({
+	render: function(){
+		this.collection.forEach(this.addOne, this);
+	},
+	addModel: function(photo) {
+		var photoView = new PhotoView({model: photo});
+//		this.$el.append(photoView.render().el);
+	}
+});
+
+
+var photosView = new PhotosView({collection: photos});
+
 
 
 		
