@@ -145,3 +145,9 @@ a.disabled {
 	min-width: 240px;
 	height: 260px;
 }
+
+.span3 {
+	text-align: center;
+	min-width: 250px;
+	height: 250px;
+}
